@@ -100,9 +100,9 @@ function RemoveProducts() {
 
 function countTotalPrice() {
   let totalPrice = cart.reduce((acc, curr) => {
-    return acc + curr.price * curr.quantity + `$`;
+    return acc + curr.price * curr.quantity;
   }, 0);
-  totalPriceContainer.textContent = totalPrice;
+  totalPriceContainer.textContent = `${totalPrice}$`;
 }
 
 function setUp() {
