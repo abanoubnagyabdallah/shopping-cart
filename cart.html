@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>cart</title>
+    <link rel="stylesheet" href="css/vendors/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <nav>
+      <div class="container">
+        <a href="index.html">Home</a>
+        <span class="cart-nav">
+          <a href="cart.html">Cart</a>
+          <span class="cart-num"></span>
+        </span>
+      </div>
+    </nav>
+
+    <main>
+      <div class="cart-cont container mt-5">
+        <!-- Cart header Start -->
+        <div class="cart-header d-flex justify-content-between align-items-center mb-4">
+          <h5 class="fw-bolder">Shopping Cart</h5>
+          <span class="remove-all-products"> Remove All </span>
+        </div>
+        <!-- Cart header End -->
+
+        <!-- Cart Start -->
+        <table class="cart w-100">
+          <tbody>
+            
+          </tbody>
+        </table>
+        <!-- Cart End -->
+
+        <!-- Cart total price Start -->
+        <div class="price-cont gap-2 d-flex align-items-end flex-column fw-bolder text-center">
+          <div class="w-25">
+            <div class="d-flex justify-content-between align-items-center text-start">
+              <div>
+                <div>Total</div>
+                <div><span class="items-num">2</span> Items</div>
+              </div>
+              <div class="total-price fs-3">$450</div>
+            </div>
+            <button class="btn btn-primary w-100">Checkout</button>
+          </div>
+        </div>
+
+        <!-- Cart total price End -->
+      </div>
+    </main>
+    <script src="js/vendors/bootstrap.min.js"></script>
+    <script src="js/cart.js" type="module"></script>
+  </body>
+</html>
